@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="/static/customizador.css">
+    </head>
+
+    <body>
+        <div class="corpo">
+            <header><center>
+                <div class="destaque">
+                    <svg width="500" height="200"> <defs> 
+                        <path id="curva" d="M10,150 Q250,10 490,150" /> </defs> 
+                        <text width="500"> 
+                            <textPath href="#curva" startOffset="3%"> Calculadora para corredores </textPath>
+                         </text> </svg></div>
+                <h3 style="font-size: 20px;">Obtenha o pace, a velocidade média ou metros por segundo da sua corrida.</h3>
+            </center></header><br>
+
+            <main>
+                <div class="retangulo">
+                    <p>Basta informar o tipo de dado e o seu valor</p> <br>
+                    <center><img src="/static/Imagens/corredor.webp" alt="corredor" style="width: 20px; height: 20px;"></center><br>
+
+                    <form method="POST" action="/calcular">
+                        <label for="tipo">Tipo de medida:</label>
+                        <select name="tipo" id="tipo" style="border-radius: 5px;">
+                            <option value="pace">pace</option>
+                            <option value="km/h">km/h</option>
+                            <option value="m/s">m/s</option>
+                        </select><br><br>
+                
+                        <label for="valor">Valor: </label>
+                        <input type="text" name="valor" id="valor" required style="height: 20px; width: 90px; border-radius: 10px;"><br><br>
+                
+                        <center><input type="submit" value="Calcular" style="border-radius: 15px; background-color: rgba(176, 186, 242, 0.608);"></center>
+                    </form>
+                    
+
+                </div><br>
+        </main></div>
+
+        <footer>
+            <hr>
+            <center>
+                <h5 class="direitos">Todos os direitos reservados.</h5>
+                <figure class="redes_sociais">
+                    <a href="https://github.com/oMatheusValim" target="_blank" class="GitHub">
+                        <img src="/static/Imagens/github_logo_fundo_preto.webp" style="width: 50px; height: 50px;" alt="GitHub">
+                    </a>
+                    <a href="https://www.instagram.com/ovalim_" target="_blank">
+                        <img src="/static/Imagens/instagram_logo.png" style="width: 50px; height: 50px;" alt="Instagram">
+                    </a>
+                </figure>
+            </center>
+        </footer>
+    </body>
+
+
+</html>
