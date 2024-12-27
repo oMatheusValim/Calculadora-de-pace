@@ -2,14 +2,14 @@ Com o intuito de auxiliar na conversão de distâncias, velocidades e tempo para
 
 Basta selecionar o tipo de dado que se tem (pace, hm/h ou m/s) e qual o valor, que irá retonar os outros dois valores.
 
-**INPUT**
+## INPUT
 
-Tipo: pace
+-> Tipo: pace
 
-Valor: 4
+-> Valor: 4
 
-**Output**
+## Output**
 
-15.00 km/h
+-> 15.00 km/h
 
-4.17 m/s
+-> 4.17 m/s
