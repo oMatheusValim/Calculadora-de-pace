@@ -8,7 +8,7 @@ Basta selecionar o tipo de dado que se tem (pace, hm/h ou m/s) e qual o valor, q
 
 -> Valor: 4
 
-## Output**
+## Output
 
 -> 15.00 km/h
 
