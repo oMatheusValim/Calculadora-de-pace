@@ -37,9 +37,9 @@ header {
     margin: 20px auto;       
     background-color: rgb(79, 80, 110);        
     border-radius: 10px;        
-    width: 500px;       
-    height: 225px;      
-    font-size: 16px;
+    width: 600px;       
+    height: 275px;      
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,6 +61,11 @@ input[type="submit"]:hover{
     background-color: rgba(182, 190, 236, 0.608);
     font-size: 15px;
     cursor: pointer;
+}
+
+.retorno{
+    text-align: center;
+    color: white;
 }
 
 footer {
