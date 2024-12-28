@@ -14,7 +14,9 @@ Basta selecionar o tipo de dado que se tem (pace, hm/h ou m/s) e qual o valor, q
 
 ## LINGUAGENS E FERRAMENTAS UTILIZADAS
 • HTML
+
 • ⁠CSS
+
 • Python -> Flask 
 
 Para instalar o Flask, basta digitar `pip install Flask` no terminal
