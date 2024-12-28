@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora</title>
         <link rel="stylesheet" href="/static/customizador.css">
+        <link rel="icon" href="/static/Imagens/corredor.webp" type="image/x-icon">
     </head>
 
     <body>
@@ -24,7 +25,7 @@
                     <p>Basta informar o tipo de dado e o seu valor</p> <br>
                     <center><img src="/static/Imagens/corredor.webp" alt="corredor" style="width: 20px; height: 20px;"></center><br>
 
-                    <form method="POST" action="/calcular">
+                    <form action="/calcular" method="POST">
                         <label for="tipo">Tipo de medida:</label>
                         <select name="tipo" id="tipo" style="border-radius: 5px;">
                             <option value="pace">pace</option>
