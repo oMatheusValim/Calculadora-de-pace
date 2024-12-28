@@ -1,5 +1,3 @@
-from app import calc
-
 <!DOCTYPE html>
 <html lang = "pt-br">
     <head>
@@ -7,6 +5,7 @@ from app import calc
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora</title>
         <link rel="stylesheet" href="/static/customizador.css">
+        <link rel="icon" href="/static/Imagens/corredor.webp" type="image/x-icon">
     </head>
 
     <body>
@@ -23,10 +22,10 @@ from app import calc
 
             <main>
                 <div class="retangulo">
-                    <p>Basta informar o tipo de dado e o seu valor</p> <br>
-                    <center><img src="/static/Imagens/corredor.webp" alt="corredor" style="width: 20px; height: 20px;"></center><br>
+                    <center><p>Basta informar o tipo de dado e o seu valor</p> <br>
+                    <img src="/static/Imagens/corredor.webp" alt="corredor" style="width: 20px; height: 20px;"></center><br>
 
-                    <form method="POST" action="/calcular">
+                    <form action="/calcular" method="POST">
                         <label for="tipo">Tipo de medida:</label>
                         <select name="tipo" id="tipo" style="border-radius: 5px;">
                             <option value="pace">pace</option>
@@ -35,15 +34,16 @@ from app import calc
                         </select><br><br>
                 
                         <label for="valor">Valor: </label>
-                        <input type="text" name="valor" id="valor" required style="height: 20px; width: 90px; border-radius: 10px;"><br><br>
+                        <input type="number" name="valor" id="valor" required step="any" style="height: 20px; width: 90px; border-radius: 10px;"><br><br>
                 
                         <center><input type="submit" value="Calcular" style="border-radius: 15px; background-color: rgba(176, 186, 242, 0.608);"></center> <br>
                     </form>
+                    <hr><br>
+                    <div class="retorno">
+                        <h2>Resultado</h2> <br>
+                        <p class="resultado">{{ resultado|safe }}</p>
+                    </div>   
                     
-                    <center>
-                        <h3>Resultado</h3> <br>
-                        <p>{{ resultado }}</p>   
-                    </center>
                 </div><br>
         </main></div>
 

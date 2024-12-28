@@ -1,7 +1,8 @@
 from flask import Flask, render_template, redirect, request
-#flask wtf forms #ver qq é isso
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = 'oValim'
 
 class Calcular:
@@ -30,10 +31,10 @@ class Calcular:
 def homepage():
     return render_template("home.html")
 
-@app.route("/calcular", methods=['POST', "GET"])
+@app.route("/calcular", methods=['GET', 'POST'])
     
 def calc():
-    if request.method != "POST":
+    if request.method != "POST" :
         return "Método não permitido. Use POST para enviar os dados.", 405
     
     tipo = request.form.get("tipo")
@@ -49,11 +50,11 @@ def calc():
     calc = Calcular(valor)
     
     if tipo == "pace":
-        resultado = f"{calc.kmH_pace():.2f} km/h\n{calc.mS_pace():.2f} m/s"
+        resultado = f"{calc.kmH_pace():.2f} km/h<br>{calc.mS_pace():.2f} m/s"
     elif tipo == "km/h":
-        resultado = f"{calc.pace_kmH():.2f} min/km (pace)\n{calc.kmH_mS():.2f} m/s"
+        resultado = f"{calc.pace_kmH():.2f} min/km (pace)<br>{calc.kmH_mS():.2f} m/s"
     elif tipo == "m/s":
-        resultado = f"{calc.mS_kmH():.2f} km/h\n{calc.pace_mS():.2f} min/km (pace)"
+        resultado = f"{calc.mS_kmH():.2f} km/h<br>{calc.pace_mS():.2f} min/km (pace)"
     else:
         resultado = "Tipo de medida inválido."
     
