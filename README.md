@@ -1,17 +1,22 @@
-Com o intuito de auxiliar na conversão de velocidade e tempo para corredores, foi desenvolvido este site.
+# CALCULADORA DE PACE
 
+## ÍNDICE
+
+- [OBJETIVO](#Objetivo)
+- [LINGUAGENS E FERRAMENTAS UTILIZADAS](#Linguagens)
+- [EXEMPLO](#Exemplo)
+
+## OBJETIVO
+
+Auxiliar corredores na conversão de diferentes métricas de velocidade, sendo metros por segundo, quilômetros por hora e pace (minutos por quilômetro).
 Basta selecionar o tipo de dado que se tem (pace, hm/h ou m/s) e qual o valor, que irá retonar os outros dois valores.
 
-## INPUT
+## LINGUAGENS E FERRAMENTAS UTILIZADAS
+• HTML
+• ⁠CSS
+• Python -> Flask 
 
--> Tipo: pace
+Para instalar o Flask, basta digitar "pip install Flask" no terminal
 
--> Valor: 4
+## EXEMPLO
 
-## Output
-
--> 15.00 km/h
-
--> 4.17 m/s
-
-O codigo ainda apresenta erros, a linkagem com o arquivo app.py não esta funcionando como deveria
