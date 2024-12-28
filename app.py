@@ -1,7 +1,8 @@
 from flask import Flask, render_template, redirect, request
-#flask wtf forms #ver qq é isso
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = 'oValim'
 
 class Calcular:
@@ -30,10 +31,10 @@ class Calcular:
 def homepage():
     return render_template("home.html")
 
-@app.route("/calcular", methods=['POST', "GET"])
+@app.route("/calcular", methods=['GET', 'POST'])
     
 def calc():
-    if request.method != "POST":
+    if request.method != "POST" :
         return "Método não permitido. Use POST para enviar os dados.", 405
     
     tipo = request.form.get("tipo")
