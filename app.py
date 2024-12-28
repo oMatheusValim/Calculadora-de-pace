@@ -49,11 +49,11 @@ def calc():
     calc = Calcular(valor)
     
     if tipo == "pace":
-        resultado = f"{calc.kmH_pace():.2f} km/h\n{calc.mS_pace():.2f} m/s"
+        resultado = f"{calc.kmH_pace():.2f} km/h<br>{calc.mS_pace():.2f} m/s"
     elif tipo == "km/h":
-        resultado = f"{calc.pace_kmH():.2f} min/km (pace)\n{calc.kmH_mS():.2f} m/s"
+        resultado = f"{calc.pace_kmH():.2f} min/km (pace)<br>{calc.kmH_mS():.2f} m/s"
     elif tipo == "m/s":
-        resultado = f"{calc.mS_kmH():.2f} km/h\n{calc.pace_mS():.2f} min/km (pace)"
+        resultado = f"{calc.mS_kmH():.2f} km/h<br>{calc.pace_mS():.2f} min/km (pace)"
     else:
         resultado = "Tipo de medida inválido."
     
