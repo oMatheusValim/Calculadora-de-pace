@@ -3,7 +3,7 @@
 ## ÍNDICE
 
 - [OBJETIVO](#Objetivo)
-- [LINGUAGENS E FERRAMENTAS UTILIZADAS](#Linguagens)
+- [LINGUAGENS E FERRAMENTAS UTILIZADAS](#Linguagens_e_ferramentas_utilizadas)
 - [EXEMPLO](#Exemplo)
 
 ## OBJETIVO
